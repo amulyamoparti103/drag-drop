@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="decsription" content="html and java script">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta name="keywords" content="html,java script">
+		<title>Drag and Drop events in javascript</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/drag.css">
+		<script src="assets/js/drag.js"></script>
+	</head>
+	<body>
+		<div id="empty_container" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<img src="assets/images/beach.jpg" alt="image" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">
+			<img src="assets/images/butterfly.jpg" alt="image" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">
+			<img src="assets/images/dandelion.jpg" alt="image" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">
+			<img src="assets/images/dove.jpg" alt="image" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">
+			<img src="assets/images/iceland.jpg" alt="image" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">
+		</div>
+		<div id="empty_container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<p id="demo"> </p>
+	</body>
+</html>
